@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="code.js"></script>
+</head>
+
+<body>
+  <div id="searches">
+    <hr>
+    <h1>Search/Selection</h1>
+    <h2> Search for Unicorn by Name</h2>
+
+    <!-- <form method="post"> -->
+    <label>Unicorn Name</label>
+
+    <input type="text" id="unicornName" placeholder="Enter Unicorn Name">
+    <input type="submit" value="submit" id="findUnicornByName">
+    <!-- </form> -->
+
+    <h2> Or, Search for Unicorn by Weight</h2>
+
+    <!-- <form method="post"> -->
+    <label>Unicorn weight</label>
+    <input type="text" id="lowerWeight" placeholder="Enter lower limit"> and
+    <input type="text" id="higherWeight" placeholder="Enter higher limit">
+    <input type="submit" value="submit" id="findUnicornByWeight">
+    <!-- </form> -->
+
+    <h2> Or, Search for Unicorn by Fav. food</h2>
+    <br>
+    <!-- <form method="post"> -->
+    <label>Unicorn Food List</label>
+    <br>
+    <label for="apple">Apple</label>
+    <input type="checkbox" id="apple">
+    <label for="carrot">Carrot</label>
+    <input type="checkbox" id="carrot">
+    <input type="submit" value="submit" id="findUnicornByFood">
+  </div>
+
+  <!-- </form> -->
+  <div id="filters">
+    <hr>
+    <h2>Filters/Projection</h2>
+    <label for="unicornNameFilter">Name</label>
+    <input type="checkbox" id="unicornNameFilter">
+
+    <label for="unicornWeightFilter">Weight</label>
+    <input type="checkbox" id="unicornWeightFilter">
+
+    <input type="submit" value="submit" id="filter">
+    <hr>
+  </div>
+  <h1>
+    Results
+  </h1>
+  <div id="result"></div>
+
+</body>
+
+</html>
